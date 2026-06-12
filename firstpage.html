@@ -20,16 +20,15 @@ body {
   background: #f2f4f7;
 }
 
-/* HEADER */
-.header {
-  position: relative;
-  width: 100%;
+.header{
+  position:relative;
+  width:100%;
 }
 
-.header img {
-  width: 100%;
-  display: block;
-  object-fit: contain;
+.header img{
+  width:100%;
+  display:block;
+  object-fit:contain;
 }
 
 /* DATE TEXT */
@@ -43,28 +42,37 @@ body {
   opacity: 0.75;
 }
 
+/* MENU WRAPPER */
+.menu-wrapper{
+  position:absolute;
+  top:34%;
+  right:4%;
+  z-index:100;
+}
+
 /* PLUS BUTTON */
-.plus-btn {
-  position: absolute;
-  top: 223px;
-  right: 31px;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 10;
-  font-weight: 25px;
-  user-select: none;
+.plus-btn{
+  width:30px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  cursor:pointer;
+  user-select:none;
+  font-weight:500;
 }
 
 /* DROPDOWN */
-.dropdown {
-  position: absolute;
-  top: 399px; /* below + button */
-  right: 16px;
-  width: 328px;
-  max-height: 100vh;
-  overflow-y: auto;
-  display: none;
-  background: #FFFFFF;
+.dropdown{
+  position:absolute;
+  top:38px;       /* always below button */
+  right:0;
+  width:min(330px, 90vw);
+  display:none;
+  background:#fff;
+  max-height:70vh;
+  overflow-y:auto;
 }
 
 /* CARD */
@@ -189,18 +197,17 @@ body {
     <span id="tripType"></span>
   </div>
 
-  <!-- + BUTTON -->
+  <div class="menu-wrapper">
+
   <div class="plus-btn" id="plusBtn">+</div>
 
-  <!-- DROPDOWN -->
   <div class="dropdown" id="dropdown">
 
-    <div class="card"><div class="serial">1</div>
-      <div class="content">
-        <div class="name-text">Shivam Umesh Kumar Mishra <span>(46355530)</span></div>
-        <div class="location">Civic Center (Nalasopara Station Flyover)</div>
-      </div>
-    </div>
+    <!-- Put all your cards here exactly as they are -->
+
+  </div>
+
+</div>
 
     <div class="card"><div class="serial">2</div>
       <div class="content">
