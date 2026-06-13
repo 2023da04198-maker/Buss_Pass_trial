@@ -62,7 +62,9 @@ body {
   user-select:none;
   font-weight:500;
 }
-
+.plus-btn.open{
+  transform: rotate(45deg);
+}
 /* DROPDOWN */
 .dropdown {
   /* position: absolute;
@@ -349,7 +351,9 @@ plusBtn.addEventListener("click", () => {
 
   if (!isOpen) {
     isOpen = true;
+     // plusBtn.textContent = "-";
     dropdown.style.display = "block";
+    plusBtn.classList.add("open");
 
     cards.forEach((card, index) => {
       card.classList.remove("hide");
