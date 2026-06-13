@@ -75,9 +75,9 @@ body {
   background: #FFFFFF; */
 
    position: absolute;
-  top: 50%/;
+  /* top: 50%; */
   /* left: 5%; */
-  transform: translate(0%, 20%);
+  transform: translate(0%, 21%);
   width: 308px;
   display: none;
   background: #fff;
@@ -350,7 +350,7 @@ plusBtn.addEventListener("click", () => {
   if (!isOpen) {
     isOpen = true;
     plusBtn.textContent = "−";
-    dropdown.style.display = "block";
+    // dropdown.style.display = "block";
 
     cards.forEach((card, index) => {
       card.classList.remove("hide");
