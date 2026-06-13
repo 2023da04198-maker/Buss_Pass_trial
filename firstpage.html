@@ -351,9 +351,8 @@ plusBtn.addEventListener("click", () => {
 
   if (!isOpen) {
     isOpen = true;
-     // plusBtn.textContent = "-";
+     plusBtn.textContent = "-";
     dropdown.style.display = "block";
-    plusBtn.classList.add("open");
 
     cards.forEach((card, index) => {
       card.classList.remove("hide");
