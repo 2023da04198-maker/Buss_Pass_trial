@@ -243,11 +243,11 @@ html, body {
             
         <div class="row"><span class="label">Name - </span><span id="empName" style="margin-left:17.5%"></span></div>
         <div class="row"><span class="label">Employee Id - </span><span id="empIdField" style="margin-left:6.5%"></span></div>
-        <!-- <div class="row"><span class="label">Route Name - </span><span id="routeField" style="margin-left:6.75%"></span></div> -->
-         <div class="row"><span class="label">Route Name - </span><span style="margin-left:6.75%">VASAI</span></div>
+        <div class="row"><span class="label">Route Name - </span><span id="routeField" style="margin-left:6.75%"></span></div>
+         <!-- <div class="row"><span class="label">Route Name - </span><span style="margin-left:6.75%">VASAI</span></div> -->
         <div class="row"><span class="label">Location - </span><span style="margin-left:12.75%">ASEZ</span></div>
-        <!-- <div class="row"><span class="label">Nodal Point - </span><span id="nodeField" style="margin-left:8%"></span></div> -->
-        <div class="row"><span class="label">Nodal Point - </span><span style="margin-left:8%">Bhabola</span></div>
+        <div class="row"><span class="label">Nodal Point - </span><span id="nodeField" style="margin-left:8%"></span></div>
+        <!-- <div class="row"><span class="label">Nodal Point - </span><span style="margin-left:8%">Bhabola</span></div> -->
         <div class="row"><span class="label">Trip Type - </span><span style="margin-left:12.25%">Both</span></div>
         <div class="row"><span class="label">Shift - </span><span id="shiftField" style="margin-left:19.75%"></span></div>
         <div class="row"><span class="label">Valid From - </span><span style="margin-left:9.75%">01-JUN-26</span></div>
@@ -261,16 +261,16 @@ html, body {
 const userName  = sessionStorage.getItem("name")   || "--";
 const userEmpId = sessionStorage.getItem("empId")  || "--";
 const userShift = sessionStorage.getItem("shift")  || "--";
-// const userRoute = sessionStorage.getItem("route")  || "--";
-// const userNode  = sessionStorage.getItem("node")   || "--";
+const userRoute = sessionStorage.getItem("route")  || "--";
+const userNode  = sessionStorage.getItem("node")   || "--";
     
 
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("empName").innerText     = userName;
     document.getElementById("empIdField").innerText = userEmpId;
     document.getElementById("shiftField").innerText = userShift;
-    // document.getElementById("routeField").innerText = userRoute;
-    // document.getElementById("nodeField").innerText  = userNode;
+    document.getElementById("routeField").innerText = userRoute;
+    document.getElementById("nodeField").innerText  = userNode;
         // Fill side menu top fields dynamically
     const empIdField = document.getElementById("menuEmpId");
     const empNameField = document.getElementById("menuEmpName");
